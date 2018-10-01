@@ -68,8 +68,8 @@ def hundreds ():                     #defining a function
 if len(tokens) == 1:    #if the inputted number is 1 digit
     ones()            #calls ones function
 
-elif len(tokens) == 2:  #if the inputted number is 2 digit
+elif len(tokens) == 2:  #if the inputted numbers are 2 digits
     tens()           #calls tens function
 
-elif len(tokens) == 3:  #if the inputted number is 3 digit
+elif len(tokens) == 3:  #if the inputted numbers are 3 digits
     hundreds()           #calls hundreds function
