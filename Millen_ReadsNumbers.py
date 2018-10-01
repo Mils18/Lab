@@ -1,4 +1,4 @@
-num1 = input("Input Number\n*with space between each number \n= ")  #input number max 3 digits with space between each number
+num1 = input("Input Number = ") #input numbers (max 3 digits)
 tokens = list(num1)
 
 dict = {        #dictionary1 for 0-9
