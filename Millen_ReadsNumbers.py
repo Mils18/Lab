@@ -30,14 +30,14 @@ print("tokens = ",tokens)      #to recheck numbers that are splitted and assigne
 print("lenght of tokens = ",len(tokens))   #to recheck the lenght of tokens
 
 def ones():                       #defining a function
-    global tokens                   #to access tokens variable
+    global tokens                   #to access tokens list
     #len tokens 1
     x=len(tokens)-1                 #last number
-    print(dict[tokens[x]],end=' ')  #print last number
+    print(dict[tokens[x]],end=' ')  #prints last number
 
 
 def tens ():                        #defining a function
-    global tokens                   #to access tokens variable
+    global tokens                   #to access tokens list
     #len tokens 2
     x = len(tokens)-2               #second last number
     y = len(tokens)-1               #last number
@@ -56,20 +56,20 @@ def tens ():                        #defining a function
 
     else:        #if the second last number is 2 - 9 (20-99)
         print(dict2[tokens[x]] + "ty", end=' ')   #prints second last number + ty
-        ones()   #call ones function
+        ones()   #calls ones function
 
 def hundreds ():                     #defining a function
-    global tokens                   #to access tokens variable
+    global tokens                   #to access tokens list
     #len tokens 3
     z = len(tokens)-3               #third last number
     print(dict[tokens[z]] + " hundred ",end="")   #prints third last number + "hundred"
-    tens()                       #call tens function
+    tens()                       #calls tens function
 
 if len(tokens) == 1:    #if the inputted number is 1 digit
-    ones()            #call ones function
+    ones()            #calls ones function
 
 elif len(tokens) == 2:  #if the inputted number is 2 digit
-    tens()           #call tens function
+    tens()           #calls tens function
 
 elif len(tokens) == 3:  #if the inputted number is 3 digit
-    hundreds()           #call hundreds function
+    hundreds()           #calls hundreds function
