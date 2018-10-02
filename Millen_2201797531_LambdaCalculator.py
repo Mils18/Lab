@@ -13,7 +13,7 @@ if operator == "+":                         #if the operator's "+"
     print("RESULT = ",x(num1,num2))         #prints final result
 
 
-elif operator == "-":                       #if the operator's "+"
+elif operator == "-":                       #if the operator's "-"
     x = lambda num1,num2 : num1 - num2      #A lambda function to substract first number with second number
     print("RESULT",x(num1,num2))            #prints final result
 
